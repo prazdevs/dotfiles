@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file.
+[user]
+	name = PraZ
+	email = hi@praz.dev
+[alias]
+	s = status
+	sw = switch
+	swc = switch -c
+	swm = switch main
+	co = checkout
+	cob = checkout -b
+	last = log -1 HEAD
+	ls = log --oneline
+	rh = reset --hard
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
+[push]
+	default = current
+
+[ini]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
