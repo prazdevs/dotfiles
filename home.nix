@@ -1,0 +1,43 @@
+{ config, pkgs, ... }:
+
+{
+  programs.home-manager.enable = true;
+
+  home.username = "sachabouillez";
+  home.homeDirectory = "/Users/sachabouillez";
+  home.stateVersion = "25.05";
+
+  catppuccin = {
+    enable = true;
+    flavor = "mocha";
+    accent = "mauve";
+  };
+
+  home.packages = with pkgs; [
+    jq
+    git-crypt
+    tldr
+    nixfmt
+  ];
+
+  home.shellAliases = {
+    hms = "home-manager switch --flake ~/.config/home-manager";
+    cat = "bat";
+    ls = "eza";
+    man = "tldr";
+  };
+
+  programs.bat.enable = true;
+  programs.eza.enable = true;
+
+  services.tldr-update.enable = true;
+
+  imports = [
+    ./modules/fonts.nix
+    ./programs/fish.nix
+    ./programs/ghostty.nix
+    ./programs/git.nix
+    ./programs/starship.nix
+    ./programs/vscode.nix
+  ];
+}
