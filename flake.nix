@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of sachabouillez";
+  description = "praz' home-manager configuration";
 
   inputs = {
     nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz";
