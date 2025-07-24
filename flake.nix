@@ -20,7 +20,7 @@
       ...
     }:
     let
-      mkHome = hostname: username: home-manager.lib.homeManagerConfiguration {
+      mkHome = username: home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.aarch64-darwin;
         modules = [
           { home = { inherit username; homeDirectory = "/Users/${username}"; }; }
@@ -32,7 +32,8 @@
     in
     {
       homeConfigurations = {
-        sachabouillez = mkHome "sachabouillez" "sachabouillez";
+        # <hostname> = mkHome "<username>";
+        sachabouillez = mkHome "sachabouillez";
       };
     };
 }
