@@ -34,6 +34,7 @@
 
   imports = [
     ./modules/fonts.nix
+    ./programs/direnv.nix
     ./programs/fish.nix
     ./programs/ghostty.nix
     ./programs/git.nix
