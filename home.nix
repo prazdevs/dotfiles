@@ -16,8 +16,10 @@
   home.packages = with pkgs; [
     jq
     git-crypt
+    google-cloud-sdk
     tldr
     nixfmt
+    nodejs_24
   ];
 
   home.shellAliases = {
