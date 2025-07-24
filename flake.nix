@@ -20,18 +20,19 @@
       ...
     }:
     let
-      system = "aarch64-darwin";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in
-    {
-      homeConfigurations."sachabouillez" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-
+      mkHome = hostname: username: home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.aarch64-darwin;
         modules = [
+          { home = { inherit username; homeDirectory = "/Users/${username}"; }; }
           ./home.nix
           catppuccin.homeModules.catppuccin
           mac-app-util.homeManagerModules.default
         ];
+      };
+    in
+    {
+      homeConfigurations = {
+        sachabouillez = mkHome "sachabouillez" "sachabouillez";
       };
     };
 }

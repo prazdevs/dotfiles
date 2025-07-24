@@ -3,8 +3,6 @@
 {
   programs.home-manager.enable = true;
 
-  home.username = "sachabouillez";
-  home.homeDirectory = "/Users/sachabouillez";
   home.stateVersion = "25.05";
 
   catppuccin = {
