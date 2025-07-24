@@ -79,7 +79,7 @@
       "terminal.integrated.cursorBlinking" = true;
       "terminal.integrated.cursorStyle" = "line";
       "terminal.integrated.defaultProfile.osx" = "fish";
-      "terminal.integrated.fontFamily" = "MonoLisa, monospace";
+      "terminal.integrated.fontFamily" = "MonoLisa, Symbols Nerd Font Mono, monospace";
       "terminal.integrated.fontWeight" = 400;
       "terminal.integrated.persistentSessionReviveProcess" = "never";
       "terminal.integrated.tabs.enabled" = true;
