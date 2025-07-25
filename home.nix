@@ -12,12 +12,12 @@
   };
 
   home.packages = with pkgs; [
+    fnm
     jq
     git-crypt
     google-cloud-sdk
     tldr
     nixfmt
-    nodejs_24
   ];
 
   home.shellAliases = {
