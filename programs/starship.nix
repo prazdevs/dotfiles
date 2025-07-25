@@ -50,6 +50,7 @@
       nix_shell = {
         format = "via [$symbol$name]($style) ";
         symbol = " ";
+        style = "bold #74c7ec";
       };
       nodejs = {
         symbol = " ";
@@ -57,20 +58,21 @@
       package = {
         display_private = true;
         symbol = " ";
-        style = "bold yellow";
+        style = "bold #f2cdcd";
       };
       python = {
         symbol = " ";
       };
       rust = {
         symbol = " ";
+        style = "bold #fab387";
       };
       custom.pnpm = {
         command = "pnpm -v";
         detect_files = ["pnpm-lock.yaml"];
         format = "and [$symbol]($style)[v$output]($style) ";
         symbol = " ";
-        style = "bold yellow";
+        style = "bold #fab387";
       };
     };
   };
