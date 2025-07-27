@@ -16,6 +16,7 @@
     jq
     git-crypt
     google-cloud-sdk
+    kubectl
     tldr
     nixfmt
   ];
