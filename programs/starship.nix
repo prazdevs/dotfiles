@@ -64,7 +64,7 @@
         symbol = " ";
       };
       rust = {
-        symbol = " ";
+        symbol = " ";
         style = "bold #fab387";
       };
       custom.pnpm = {
