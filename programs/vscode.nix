@@ -11,6 +11,7 @@
       gruntfuggly.todo-tree
       jnoortheen.nix-ide
       lokalise.i18n-ally
+      mkhl.direnv
       rust-lang.rust-analyzer
       tamasfe.even-better-toml
       usernamehw.errorlens
