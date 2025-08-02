@@ -11,6 +11,7 @@
       gruntfuggly.todo-tree
       jnoortheen.nix-ide
       lokalise.i18n-ally
+      rust-lang.rust-analyzer
       usernamehw.errorlens
       vue.volar
     ];
